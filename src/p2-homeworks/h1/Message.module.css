@@ -1,0 +1,60 @@
+.message {
+    display: flex;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.avatar {
+    border-radius: 100px;
+    border: 3px solid green;
+    box-shadow: 0 0 7px #666;
+
+}
+
+.dialog {
+    background: #2a2828;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 10px;
+    color: #e0dada;
+
+}
+
+/*.dialog {*/
+/*    position: relative;*/
+/*    background: #2a2828;*/
+/*    color: #e0dada;*/
+/*    line-height: 120px;*/
+/*    text-align: center;*/
+/*    width: 250px;*/
+/*    height: 120px;*/
+/*    border-radius: 10px;*/
+/*    padding: 0px;*/
+/*}*/
+/*.dialog:after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    display: block;*/
+/*    width: 0;*/
+/*    z-index: 1;*/
+/*    border-style: solid;*/
+/*    border-width: 0 0 22px 24px;*/
+/*    border-color: transparent transparent #000000 transparent;*/
+/*    top: 90%;*/
+/*    left: -24px;*/
+/*    margin-top: -11px;*/
+/*}*/
+
+.content-message {
+    padding: 10px;
+}
+
+.nick {
+    color: blueviolet;
+    padding: 5px;
+}
+
+.time {
+    color: #aea9a9;
+    padding-left: 100px;
+}
