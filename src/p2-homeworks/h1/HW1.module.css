@@ -1,4 +1,15 @@
-.input-message {
-    margin: 20px;
-    border: blue;
+.input_message {
+
+}
+
+button {
+    margin: 0 5px;
+    background: navy;
+    color: white;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
 }

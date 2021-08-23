@@ -7,54 +7,49 @@
 .avatar {
     border-radius: 100px;
     border: 3px solid green;
-    box-shadow: 0 0 7px #666;
+    box-shadow: 0 0 7px #777;
 
 }
 
 .dialog {
+    position: relative;
     background: #2a2828;
-    border-radius: 5px;
+    border-radius: 5px 5px 5px 0;
     padding: 7px;
-    margin: 10px;
+    margin: 0 10px;
     color: #e0dada;
-
+    display: flex;
+    box-shadow: 5px 5px 7px #848282;
 }
 
-/*.dialog {*/
-/*    position: relative;*/
-/*    background: #2a2828;*/
-/*    color: #e0dada;*/
-/*    line-height: 120px;*/
-/*    text-align: center;*/
-/*    width: 250px;*/
-/*    height: 120px;*/
-/*    border-radius: 10px;*/
-/*    padding: 0px;*/
-/*}*/
-/*.dialog:after {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    display: block;*/
-/*    width: 0;*/
-/*    z-index: 1;*/
-/*    border-style: solid;*/
-/*    border-width: 0 0 22px 24px;*/
-/*    border-color: transparent transparent #000000 transparent;*/
-/*    top: 90%;*/
-/*    left: -24px;*/
-/*    margin-top: -11px;*/
-/*}*/
+.dialog:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 0 0 20px 22px;
+    border-color: transparent transparent #2a2828 transparent;
+    top: 90%;
+    left: -22px;
+    margin-top: -11px;
+}
 
-.content-message {
+.content_message {
     padding: 10px;
+    align-self: flex-start;
+    max-width: 200px;
+    word-wrap: break-word;
+    margin-bottom: 15px;
 }
 
 .nick {
     color: blueviolet;
-    padding: 5px;
 }
 
 .time {
     color: #aea9a9;
-    padding-left: 100px;
+    align-self: flex-end;
+    margin: 0 5px;
 }

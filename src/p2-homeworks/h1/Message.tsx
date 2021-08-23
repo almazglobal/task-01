@@ -14,8 +14,11 @@ export const Message = (props: MessageDataType) => {
                 alt="avatar user"
             />
             <div className={style.dialog}>
-                <div className={style.nick}>{props.name}</div>
-                <div className={style.contentMessage}>{props.message}</div>
+
+                <div className={style.content_message}>
+                    <div className={style.nick}>{props.name}</div>
+                    {props.message}
+                </div>
 
                 <div className={style.time}>{props.time}</div>
             </div>

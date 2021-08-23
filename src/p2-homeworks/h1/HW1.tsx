@@ -39,17 +39,25 @@ function HW1() {
             <hr/>
             homeworks 1
 
-            <MessagesList
-                messages={messages}
-            />
+            <div className={style.main_content}>
+                <MessagesList
+                    messages={messages}
+                />
+                <div>
+                    <input
+                        type="text"
+                        value={userMessage}
+                        onChange={changeHandler}
+                        className={style.input_message}
+                    />
+                    <button
+                        onClick={() => addMessage(userMessage)}>
+                        send
+                    </button>
+                </div>
 
-            <input
-                type="text"
-                value={userMessage}
-                onChange={changeHandler}
-                className={style.inputMessage}
-            />
-            <button onClick={() => addMessage(userMessage)}>Send</button>
+            </div>
+
 
             <hr/>
             {/*для личного творчества, могу проверить*/}

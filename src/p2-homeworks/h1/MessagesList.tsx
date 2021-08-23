@@ -22,4 +22,4 @@ export const MessagesList = (props: PropsMessagesListType) => {
             })}
         </ul>
     )
-};
+}
